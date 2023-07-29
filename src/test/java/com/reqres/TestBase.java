@@ -10,7 +10,8 @@ public class TestBase {
 
     @BeforeAll
     static void configureBeforeAll() {
-        RestAssured.baseURI = "https://reqres.in/";
+        //RestAssured.baseURI = "https://reqres.in/";
+        RestAssured.baseURI = "https://act.web-staging.2gis.ru/";
     }
 
 }

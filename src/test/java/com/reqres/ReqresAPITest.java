@@ -16,6 +16,21 @@ import static org.hamcrest.CoreMatchers.is;
 
 public class ReqresAPITest extends TestBase {
 
+   @Test
+   void initHistoryTest () {
+
+       for (int i = 0; i < 2250; i ++ ) {
+           given()
+                   .accept("*/*")
+                   .log().uri()
+                   .get("api/v1/adjustments/curatorHistoryInit/" + i)
+                   .then()
+                   .log().status()
+                   .statusCode(STATUS_CODE_200);
+       }
+   }
+
+
     @Test
     @DisplayName("Проверка корректного создания пользователя")
     void createUserTest() {
