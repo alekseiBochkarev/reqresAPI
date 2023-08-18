@@ -11,7 +11,9 @@ public class TestBase {
     @BeforeAll
     static void configureBeforeAll() {
         //RestAssured.baseURI = "https://reqres.in/";
-        RestAssured.baseURI = "https://act.web-staging.2gis.ru/";
+        //RestAssured.baseURI = "https://act.web-staging.2gis.ru/";
+       // RestAssured.baseURI = "https://act.api.2gis.ru";
+        RestAssured.baseURI = "https://allure.2gis.dev";
     }
 
 }
